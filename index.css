@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    line-height:1.5;
+}
+
+:root {
+    --dark-cyan:#0d1f19;
+    --cream: #f2ebe3;
+    --dark-blue:#1c232b;
+    --gray-blue:#6c7289;
+    --white:#ffffff;
+    --cyan: hsl(158, 36%, 37%);
+}

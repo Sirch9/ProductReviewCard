@@ -1,0 +1,147 @@
+/*Screen size 320px to 425px*/
+@font-face {
+    font-family:'fraunces';
+    src: url(/Asserts/fonts/fraunces-italic-variablefont_softwonkopszwght-webfont.woff2) format('woff2');
+    src: url('/Asserts/fonts/fraunces-variablefont_softwonkopszwght-webfont.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'montserat';
+    src: url(/Asserts/fonts/montserrat-italic-variablefont_wght-webfont.woff2) format('woff2');
+    font-weight: 100 900;
+    font-display: swap;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cream);
+    font-family: 'montserat';
+    font-size: 400;
+    font-weight: lighter;
+    color: var(--dark-blue);
+}
+
+h3{
+    font-family: 'montserat';
+    font-variation-settings: 'wght' 300.50;
+}
+
+.heading {
+    font-family: 'fraunces';
+    font-weight: 900;
+    font-style: italic;
+    font-variation-settings: 'wonk' 1;
+    line-height: 1;
+}
+.container{
+    /*border: 1px solid red;*/
+    width: 80%;
+    border-radius: 0.5rem;
+    max-width: 560px;
+    background-color: var(--white);
+    /*max-height: 90%;*/
+}
+
+.information{
+    /*: 1px solid red;*/
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.price{
+    margin: 0.5rem auto 0.5rem;
+    display: flex;
+}
+.mainNum{
+    font-size: x-large;
+    color: var(--cyan);  
+    margin-right: 1rem;
+    font-family: 'fraunces';
+    font-weight: 900;
+    font-style: italic;
+    font-variation-settings: 'wonk' 1;
+}
+
+.scratchedNum{
+    font-size: x-small;
+    padding-bottom: 1rem;  
+}
+
+/*button*/
+.btn{
+    width:100%;
+    text-align: center;
+    display: block;
+    color: var(--white);
+    background-color: var(--cyan);
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color:var(--dark-cyan);
+    color:var(--white)
+}
+
+.svg{
+    padding: 0 0.5rem;
+}
+
+
+@media screen and (max-width:425px) {
+    .smallScreenImage{
+       /* border: 1px solid red;*/
+        width:100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .bigScreenImage{
+        display: none;
+    }
+}
+
+@media screen and (min-width:426px ) {
+    /*max-width:646*/
+    .container{
+        display: flex;
+        flex-direction: row;
+        max-height: 80%;
+    }
+
+    .image{
+        width: 50%;
+    }
+    
+
+    .bigScreenImage{
+        width:100%;
+        height: 100%;
+        border-radius: 0.5rem 0 0 0.5rem ;
+    }
+    .smallScreenImage{
+        display: none;
+    }
+
+    .information{
+       /*border: 1px solid red;*/
+        /*max-width: 560px;*/
+       /* margin:  auto;*/
+        margin: 0.5rem 1rem 1rem;
+        padding:  1rem 0.5rem 0.5rem;
+        width: 50%;
+       
+    }
+}
+
+
+
